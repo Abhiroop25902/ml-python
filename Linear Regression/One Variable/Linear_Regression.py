@@ -1,6 +1,7 @@
 from mpl_toolkits import mplot3d
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib
 from mpl_toolkits.mplot3d import Axes3D  
 
 
@@ -36,7 +37,6 @@ def gradient_descent(x, y, theta, alpha, num_iter):
 def predict(value, theta):
     x_array = [1, value]
     return np.matmul(x_array, theta)
-
 
 data_path = "./Linear Regression/One Variable/ex1data1.txt"
 data = np.loadtxt(data_path, delimiter=',')
