@@ -3,11 +3,12 @@
 Linear Regression is the Machine learning Model, through which we can find correlation between dependant variables and independent variables.
 
 Consider we have a dataset of 97 data points,each with the following two values:
- - Population of City
- - Profit of City
+
+-   Population of City
+-   Profit of City
 
 Under the assumption that the Population brings Profit, let the independent value be the population (let it be x), and the dependant value be profit (let it be y)
 
 Before making further assumptions, lets look at the datasets's scatter plot:
 
-![image]("https://github.com/Abhiroop25902/ml-python/blob/main/Linear%20Regression/One%20Variable/scatter_plot.png")
+![image]("https://github.com/Abhiroop25902/ml-python/blob/main/Linear%20Regression/One%20Variable/Sources/scatter_plot.png")
