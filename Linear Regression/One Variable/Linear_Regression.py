@@ -1,8 +1,5 @@
-from mpl_toolkits import mplot3d
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib
-from mpl_toolkits.mplot3d import Axes3D  
 
 
 def hypothesis(x, theta):
@@ -38,6 +35,7 @@ def predict(value, theta):
     x_array = [1, value]
     return np.matmul(x_array, theta)
 
+
 data_path = "./Linear Regression/One Variable/ex1data1.txt"
 data = np.loadtxt(data_path, delimiter=',')
 
@@ -70,7 +68,8 @@ print("Testing the cost function ...")
 print(f"with theta = [[0],[0]] \nCost computed = {compute_cost(x,y,theta)}")
 print("Expected cost value (approx) 32.07\n")
 
-print(f"with theta = [[-1],[2]] \nCost computed = {compute_cost(x,y,[[-1],[2]])}")
+print(
+    f"with theta = [[-1],[2]] \nCost computed = {compute_cost(x,y,[[-1],[2]])}")
 print("Expected cost value (approx) 54.24\n")
 
 print("Running Gradient Descent ...\n")
@@ -81,8 +80,10 @@ print(minimized_theta)
 print("Expected theta values (approx)")
 print("  3.6303\n  1.1664\n")
 
-print(f"For population = 35,000, we predict a profit of {predict(3.5, minimized_theta)*10000}")
-print(f"For population = 70,000, we predict a profit of {predict(7, minimized_theta)*10000}")
+print(
+    f"For population = 35,000, we predict a profit of {predict(3.5, minimized_theta)*10000}")
+print(
+    f"For population = 70,000, we predict a profit of {predict(7, minimized_theta)*10000}")
 
 plt.figure("Linear Regression Result")
 plt.scatter(independent_x, dependant_y, marker="x", c="r")
