@@ -10,4 +10,4 @@ Under the assumption that the Population brings Profit, let the independent valu
 
 Before making further assumptions, lets look at the datasets's scatter plot:
 
-![image]("scatter_plot.png")
+![image]("https://github.com/Abhiroop25902/ml-python/blob/main/Linear%20Regression/One%20Variable/scatter_plot.png")
