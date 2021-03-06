@@ -91,3 +91,4 @@ plt.plot(x[:, 1], hypothesis(x, minimized_theta))
 plt.ylabel('Profit in $10,000s')
 plt.xlabel('Population of City in 10,000s')
 plt.show()
+#end
