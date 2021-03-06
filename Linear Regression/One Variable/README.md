@@ -16,8 +16,13 @@ From the scatter plot we can guess that there will be a linear correlation betwe
 
 ## Hypothesis function
 
-consider a hypothesis function:  
+consider a hypothesis function, which predicts y with x as input
 
 ![](./Sources/hypothesis_equation.png)
 
-which predicts y with x as input
+we have to tune &theta;<sub>0</sub> and &theta;<sub>1</sub> such that the line generated will be the "best fit" for the dataset given.
+
+## How to find the "best fit" ?
+
+
+
