@@ -107,4 +107,4 @@ So following changes were made to the algorithm:
 ![](./Sources/j_history.png)
 
 
-So, thats the End, Have a great day, and continue learning 😁
+So, thats the End, Have a great day, and continue learning 😁.
