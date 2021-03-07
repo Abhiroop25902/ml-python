@@ -46,6 +46,7 @@ dependant_y = data[:, 1]
 # showing data
 print("Plotting Data ...\n")
 plt.figure("Scatter Plot Visualization of Data")
+plt.title("Scatter Plot Visualization of Data")
 plt.scatter(independent_x, dependant_y, marker="x", c="r")
 plt.ylabel('Profit in $10,000s')
 plt.xlabel('Population of City in 10,000s')
@@ -75,6 +76,13 @@ print("Expected cost value (approx) 54.24\n")
 print("Running Gradient Descent ...\n")
 minimized_theta, J_history = gradient_descent(x, y, theta, alpha, num_iter)
 
+plt.figure("Value of J during Gradient Descent")
+plt.title('Value of J during Gradient Descent')
+x_axis = range(len(J_history))
+plt.xlabel('No. of iterations')
+plt.ylabel("Cost function J")
+plt.plot(x_axis,J_history)
+
 print("Theta found by gradient descent:")
 print(minimized_theta)
 print("Expected theta values (approx)")
@@ -86,9 +94,11 @@ print(
     f"For population = 70,000, we predict a profit of {predict(7, minimized_theta)*10000}")
 
 plt.figure("Linear Regression Result")
+plt.title("Linear Regression Result")
 plt.scatter(independent_x, dependant_y, marker="x", c="r")
 plt.plot(x[:, 1], hypothesis(x, minimized_theta))
 plt.ylabel('Profit in $10,000s')
 plt.xlabel('Population of City in 10,000s')
 plt.show()
+
 #end
